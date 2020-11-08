@@ -11,7 +11,19 @@ All timings are configurable using constants.
 
 # Usage
 
-## Configure
+## Hardware
+
+* 1 x Active Piezo Buzzer
+* 1 x SPST or SPDT Toggle Switch
+* 1 x Rain Sensor Board
+* 1 x Rain Sensor Controller Board
+
+
+![circuit/pi-rain-sensor.png](circuit/pi-rain-sensor.png "pi-rain-sensor Circuit Diagram")
+
+## Software
+
+### Configure
 
 Check the help to configure details such as the GPIO pins and timings.
 
@@ -23,7 +35,7 @@ A default tune is included with the project. Additional tunes can be configured 
 
 A tune file contains lines with float values on each line. Each value represents a duration for either a buzzer sound or a sleep. The first line is a sound duration, the second is a sleep duration, and so on.
 
-## Execute
+### Execute
 
 If running with default settings, the program can be easily launched with:
 
