@@ -4,6 +4,7 @@ from gpiozero import Buzzer, InputDevice
 
 
 def main():
+    print("pi-rain-sensor launched.")
     tune = load_tune(args.tune)
     buzzer = Buzzer(args.pin_buzzer)
     rain_sensor = InputDevice(args.pin_sensor)
